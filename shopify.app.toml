@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "xApp"
+client_id = "27f8757b7729367a6ac4ebe9e67d875f"
+application_url = "https://called-long-input-expected.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://called-long-input-expected.trycloudflare.com/auth/callback",
+  "https://called-long-input-expected.trycloudflare.com/auth/shopify/callback",
+  "https://called-long-input-expected.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "theme-y.myshopify.com"
